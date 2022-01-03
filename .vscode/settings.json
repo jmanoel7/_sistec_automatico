@@ -1,0 +1,10 @@
+{
+    "gitProjectManager.baseProjectsFolders": [
+        "/home/joaomanoel/git-home",
+        "/home/joaomanoel/git-ifg",
+        "/home/joaomanoel/git-esab",
+        "/home/joaomanoel/git-others"
+    ],
+    "gitProjectManager.storeRepositoriesBetweenSessions": true,
+    "python.pythonPath": "venv/sistec_automatico_dev/bin/python"
+}
