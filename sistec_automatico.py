@@ -23,7 +23,7 @@ while True:
 
 sistec_html = select_element.get_property('outerHTML')
 sistec_html = sistec_html.encode('utf-8')
-f = open('/home/joaomanoel/temp/sistec.html', 'wb')
+f = open('/tmp/sistec.html', 'wb')
 f.write(sistec_html)
 f.close()
 
@@ -34,7 +34,7 @@ cookies.append(cookie_phpsessid)
 cookies = ',\n'.join(cookies)
 cookies = '[\n%s\n]' % cookies
 cookies = cookies.encode('utf-8')
-f = open('/home/joaomanoel/temp/cookies.json', 'wb')
+f = open('/tmp/cookies.json', 'wb')
 f.write(cookies)
 f.close()
 
@@ -43,11 +43,11 @@ sleep(time_out)
 
 xpath = '//*[@id="cookies"]'
 cookie_element = get_browser().find_element(By.XPATH, xpath)
-cookie_element.send_keys('/home/joaomanoel/temp/cookies.json')
+cookie_element.send_keys('/tmp/cookies.json')
 
 xpath = '//*[@id="sistec"]'
 sistec_element = get_browser().find_element(By.XPATH, xpath)
-sistec_element.send_keys('/home/joaomanoel/temp/sistec.html')
+sistec_element.send_keys('/tmp/sistec.html')
 
 xpath = '/html/body/div[1]/form/p[3]/input'
 upload_element = get_browser().find_element(By.XPATH, xpath)
