@@ -38,7 +38,7 @@ f = open('/tmp/cookies.json', 'wb')
 f.write(cookies)
 f.close()
 
-get_browser().get('http://aguia:8080/sistec_download')
+get_browser().get('http://coruja-com-br:8080/sistec_download')
 sleep(time_out)
 
 xpath = '//*[@id="cookies"]'
