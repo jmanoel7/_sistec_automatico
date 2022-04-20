@@ -1,5 +1,0 @@
-# PARA EXECUTAR
-selenium
-
-# PARA TESTES
-jupyterlab
